@@ -1,0 +1,9 @@
+username = "Nidhi"
+password = 123
+if username == "Nidhi" and password == 123 :
+    print("Login successful")
+#elif username or password == False:
+    #print("invalid username or passoword")
+else:
+    print("Login Failed")
+

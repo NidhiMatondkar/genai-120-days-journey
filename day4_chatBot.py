@@ -7,4 +7,4 @@ for skill in skills:
     print(skill)
 first , *others = skills
 print("\nPrimary Skill is :",  first)
-print("\n others skills are :",  others)
+print("\n others skills are :",   others)
