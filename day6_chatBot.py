@@ -2,7 +2,7 @@ def chatBot(user_input):
     user_input =user_input.strip().lower() #strip removes the extra space and lower will handdle letters
     
 
-    #if "Hello" in user_input:
+    #if "Hello" in user_input: this was not working because above I have used .lower() so it is missmatching
         #return "Hi there 👋"
     if "hello" in user_input:
         return "Hi there 👋"
