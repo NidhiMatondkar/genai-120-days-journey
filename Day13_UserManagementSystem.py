@@ -34,10 +34,23 @@ if not found:
 
 print("---USer Age >= 23----")
 for person in user:
-    person["Age"] >= 23
+   if person["Age"] >= 23:
     print("name:", person["Name"] , "age:", person["Age"], "goal:" , person["Role"])
+   
     
 with open("userDetalis.json" , "w")as file:
    json.dump(user,file)
+
+
+name_del = input("Enter name to delete:").lower().strip()
+for person in user:
+    
+    if person["Name"] == name_del:
+        persons.remove(person)
+        break
+
+    print("After Deleting the user")
+    for person in user:
+           print(f"Name: {person['Name']} | Age: {person['Age']} | Role: {person['Role']}")
     
      
